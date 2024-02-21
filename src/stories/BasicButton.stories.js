@@ -3,21 +3,25 @@ import { BasicButton } from "../components";
 
 export default {
   component: BasicButton,
-
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: "centered",
   },
   tags: ["autodocs"],
   argTypes: {
-    color: { control: 'color' },
+    backgroundColor: { control: 'color' },
   },
 };
 
-export const FirstStory = {
+export const Primary = {
   args: {
-    //👇 The args you need here will depend on your component
-    label: 'Hi Prashant',
+    primary: true,
+    label: 'Button',
+  },
+};
+
+export const Secondary = {
+  args: {
+    label: 'Button',
   },
 };
 
@@ -27,4 +31,25 @@ export const Warning = {
     label: 'Delete now',
     backgroundColor: 'red',
   }
+};
+
+export const Large = {
+  args: {
+    size: 'large',
+    label: 'Button',
+  },
+};
+
+export const Medium = {
+  args: {
+    size: 'medium',
+    label: 'Button',
+  },
+};
+
+export const Small = {
+  args: {
+    size: 'small',
+    label: 'Button',
+  },
 };

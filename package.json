@@ -2,11 +2,23 @@
   "name": "component-craftsman",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "repository": "https://github.com/sangamprashant/component-craftsman.git",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "build": "vite build"
   },
   "author": "Prashant Srivastav",
   "license": "MIT",
@@ -22,7 +34,8 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "storybook": "^7.6.17"
+    "storybook": "^7.6.17",
+    "terser": "^5.27.2"
   },
   "peerDependencies": {
     "react": "^18.2.0",
