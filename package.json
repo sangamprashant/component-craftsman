@@ -2,15 +2,20 @@
   "name": "component-craftsman",
   "version": "1.0.2",
   "description": "",
-  "repository": "https://github.com/sangamprashant/component-craftsman.git",
-  "main": "./storybook-static/index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangamprashant/component-craftsman.git"
+  },
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "build": "vite build"
+    "chromatic": "npx chromatic --project-token=chpt_a4be35e87534bb0"
   },
-  "author": "Prashant Srivastav",
+  "author": {
+    "name": "Prashant Srivastav"
+  },
   "license": "MIT",
   "devDependencies": {
     "@storybook/addon-essentials": "^7.6.17",
@@ -22,6 +27,7 @@
     "@storybook/react": "^7.6.17",
     "@storybook/react-vite": "^7.6.17",
     "@storybook/test": "^7.6.17",
+    "chromatic": "^10.9.6",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -31,5 +37,9 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/sangamprashant/component-craftsman/issues"
+  },
+  "homepage": "https://github.com/sangamprashant/component-craftsman#readme"
 }
