@@ -3,7 +3,17 @@
   "version": "1.0.1",
   "description": "",
   "repository": "https://github.com/sangamprashant/component-craftsman.git",
-  "main": "./storybook-static/index.html",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
