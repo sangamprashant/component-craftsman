@@ -1,0 +1,5 @@
+.storybook
+node_modules
+src
+storybook-static
+vite.config.js

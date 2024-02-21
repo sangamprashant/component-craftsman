@@ -6,11 +6,24 @@
     "type": "git",
     "url": "git+https://github.com/sangamprashant/component-craftsman.git"
   },
-  "main": "src/index.js",
+  "type": "module",
+  "files": [
+    "dist",
+    "dist/style.css"
+  ],
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs"
+    }, "./css": "./dist/style.css"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
+    "build": "vite build",
     "chromatic": "npx chromatic --project-token=chpt_a4be35e87534bb0"
   },
   "author": {
