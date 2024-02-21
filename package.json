@@ -1,6 +1,6 @@
 {
   "name": "component-craftsman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "repository": "https://github.com/sangamprashant/component-craftsman.git",
   "main": "./dist/index.umd.cjs",
