@@ -1,6 +1,6 @@
 {
   "name": "component-craftsman",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "repository": "https://github.com/sangamprashant/component-craftsman.git",
   "main": "./storybook-static/index.html",
