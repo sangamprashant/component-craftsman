@@ -1,4 +1,4 @@
-import { BasicButton } from "../components";
+import { BasicButton } from "../../components";
 
 
 export default {
