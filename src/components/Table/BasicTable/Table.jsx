@@ -2,7 +2,7 @@ import React from "react";
 import "./Table.css";
 export const Table = () => {
   return (
-    <table class="rwd-table">
+    <table className="component-craftsman-table">
       <thead>
         <tr>
           <th>Movie Title</th>
