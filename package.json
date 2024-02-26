@@ -9,7 +9,8 @@
   "type": "module",
   "files": [
     "dist",
-    "dist/style.css"
+    "dist/style.css",
+    "icon"
   ],
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",

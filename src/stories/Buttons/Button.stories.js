@@ -12,10 +12,11 @@ export default {
 };
 
 export const Both = {
-    args: {
-      icon: "df",label: "Label",
-    },
-  };
+  args: {
+    icon: "df",
+    label: "Label",
+  },
+};
 
 export const Icon = {
   args: {

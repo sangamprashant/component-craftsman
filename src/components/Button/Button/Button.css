@@ -1,13 +1,11 @@
 .component-craftsman--inner-button-divide {
-    margin: 0 10px;
-    font-weight: 100;
-
-  }
+  margin: 0 10px;
+  font-weight: 100;
+}
 .component-craftsman-button span {
   text-align: center;
   padding: 0;
 }
-  .component-craftsman--inner-button-divide.secondary {
- 
-    color: rgba(124, 124, 124, 0.279);
-  }
+.component-craftsman--inner-button-divide.secondary {
+  color: rgba(124, 124, 124, 0.279);
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import "./EmailCheckInput.css";
 
@@ -10,15 +10,13 @@ export const EmailCheckInput = ({
   ...props
 }) => {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  const [isEmailValid, setIsEmailValid] = React.useState(
-    value ? emailRegex.test(value) : false
-  );
+  const [isEmailValid, setIsEmailValid] = useState(false);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setIsEmailValid(emailRegex.test(value));
   }, [value]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (isValid) {
       isValid(isEmailValid);
     }
@@ -28,7 +26,7 @@ export const EmailCheckInput = ({
     <input
       type={type}
       placeholder={placeholder}
-      value={value}
+      value={value} 
       style={{
         borderColor: value ? (isEmailValid ? "green" : "red") : "",
       }}
@@ -63,9 +61,10 @@ EmailCheckInput.propTypes = {
 
 EmailCheckInput.defaultProps = {
   type: "text",
-  placeholder: "Enter email",
+  placeholder: "",
   onChange: undefined,
   isValid: undefined,
+  value:"",
 };
 
 export default EmailCheckInput;
