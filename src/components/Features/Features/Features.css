@@ -1,0 +1,42 @@
+.component-craftsman-features {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 50px;
+}
+
+.component-craftsman-feature-container {
+  margin-top: 10px;
+}
+
+.component-craftsman-feature-container p {
+  color: #000;
+  text-align: center;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.component-craftsman-feature-container img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 720px) {
+  .component-craftsman-features {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+  }
+
+  .component-craftsman-feature-container p {
+    margin-bottom: 25px;
+  }
+
+  .component-craftsman-feature-container {
+    margin-top: 20px;
+  }
+
+  .component-craftsman-feature-container:nth-child(2) {
+    order: -1;
+  }
+}

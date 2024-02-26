@@ -1,10 +1,8 @@
-import { Timeline } from "../../components";
+import { Page404 } from "../../components";
 
 export default {
-  component: Timeline,
-  parameters: {
-
-  },
+  component: Page404,
+  parameters: {},
   tags: ["autodocs"],
 };
 
