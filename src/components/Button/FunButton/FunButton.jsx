@@ -18,18 +18,20 @@ export const FunButton = ({ btn, label, ...props }) => {
     12: "slide",
     13: "offset",
   };
-  
+
   const index = btn;
 
   const classIs =
     index <= 6
       ? `component-craftsman-funbtn component-craftsman-funbtn-${pos[index]}`
       : `component-craftsman-box-button component-craftsman-box-${pos[index]}`;
-      
+
   return (
-    <button type="button" {...props} className={classIs}>
-      {label}
-    </button>
+    <div>
+      <button type="button" {...props} className={classIs}>
+        {label}
+      </button>
+    </div>
   );
 };
 

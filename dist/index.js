@@ -664,16 +664,20 @@ if (process.env.NODE_ENV !== "production") {
 var Fe = ie.exports;
 const u = /* @__PURE__ */ ke(Fe), Ce = ({ backgroundColor: r, primary: s, size: o, ...l }) => {
   const i = s ? "component-craftsman--primary" : "component-craftsman--secondary";
-  return /* @__PURE__ */ e.createElement(
+  return /* @__PURE__ */ e.createElement("div", null, /* @__PURE__ */ e.createElement(
     "button",
     {
       type: "button",
       ...l,
       style: r && { backgroundColor: r },
-      className: ["component-craftsman-button", `component-craftsman--${o}`, i].join(" ")
+      className: [
+        "component-craftsman-button",
+        `component-craftsman--${o}`,
+        i
+      ].join(" ")
     },
     l.label
-  );
+  ));
 };
 Ce.propTypes = {
   /**
@@ -708,7 +712,7 @@ const Se = ({ backgroundColor: r, primary: s, size: o, icon: l, label: i, radius
     ...r && { backgroundColor: r },
     ...O && { borderRadius: `${10 * O}px` }
   };
-  return /* @__PURE__ */ e.createElement(
+  return /* @__PURE__ */ e.createElement("div", null, /* @__PURE__ */ e.createElement(
     "button",
     {
       type: "button",
@@ -721,7 +725,7 @@ const Se = ({ backgroundColor: r, primary: s, size: o, icon: l, label: i, radius
     l && i && /* @__PURE__ */ e.createElement("span", { className: `component-craftsman--inner-button-divide ${s ? "primary" : "secondary"}` }, " | "),
     " ",
     /* @__PURE__ */ e.createElement("span", null, " ", i)
-  );
+  ));
 };
 Se.propTypes = {
   /**
@@ -779,7 +783,7 @@ const Re = ({ btn: r, label: s, ...o }) => {
     12: "slide",
     13: "offset"
   }, i = r, f = i <= 6 ? `component-craftsman-funbtn component-craftsman-funbtn-${l[i]}` : `component-craftsman-box-button component-craftsman-box-${l[i]}`;
-  return /* @__PURE__ */ e.createElement("button", { type: "button", ...o, className: f }, s);
+  return /* @__PURE__ */ e.createElement("div", null, /* @__PURE__ */ e.createElement("button", { type: "button", ...o, className: f }, s));
 };
 Re.propTypes = {
   /**

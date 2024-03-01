@@ -10,7 +10,8 @@ export const Button = ({backgroundColor,primary ,size, icon,label,radius, ...pro
         ...(validatedRadius && { borderRadius: `${10 * validatedRadius}px` })
       };
   return (
-    <button
+    <div>
+      <button
       type="button"
       {...props}
       style={buttonStyle}
@@ -18,6 +19,7 @@ export const Button = ({backgroundColor,primary ,size, icon,label,radius, ...pro
     >
      <span> {icon} </span> {icon && label &&<span className={`component-craftsman--inner-button-divide ${primary?"primary":"secondary"}`}> | </span>} <span> {label}</span>
     </button>
+    </div>
   );
 };
 

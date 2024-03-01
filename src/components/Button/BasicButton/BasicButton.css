@@ -17,16 +17,29 @@
   background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
 }
-
 .component-craftsman--small {
   font-size: 12px;
   padding: 10px 16px;
 }
+
+.component-craftsman--small svg {
+  font-size: 12px;
+}
+
 .component-craftsman--medium {
   font-size: 14px;
   padding: 11px 20px;
 }
+
+.component-craftsman--medium svg {
+  font-size: 14px;
+}
+
 .component-craftsman--large {
   font-size: 16px;
   padding: 12px 24px;
+}
+
+.component-craftsman--large svg {
+  font-size: 16px;
 }
