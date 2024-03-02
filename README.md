@@ -34,7 +34,7 @@ Once installed, you can import individual components from Component Craftsman in
 import { BasicButton} from 'component-craftsman';
 ```
 
-For detailed usage instructions and documentation, please refer to the [official documentation](#).
+For detailed usage instructions and documentation, please refer to the [official documentation](https://sangamprashant.github.io/component-craftsman-site).
 
 ### Contributing
 
