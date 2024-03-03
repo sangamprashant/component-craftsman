@@ -57,7 +57,7 @@
   "bugs": {
     "url": "https://github.com/sangamprashant/component-craftsman/issues"
   },
-  "homepage": "https://sangamprashant.github.io/component-craftsman-site",
+  "homepage": "https://component-craftsman.vercel.app",
   "keywords": [
     "react",
     "react-component",
@@ -73,5 +73,8 @@
     "frontend",
     "web",
     "user-interface"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
