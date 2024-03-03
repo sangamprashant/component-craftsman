@@ -75,6 +75,6 @@
     "user-interface"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "@sangamprashant:registry": "https://npm.pkg.github.com"
   }
 }
