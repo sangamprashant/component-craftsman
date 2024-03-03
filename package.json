@@ -1,6 +1,6 @@
 {
   "name": "component-craftsman",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Component Craftsman is a comprehensive React UI library that offers a collection of pre-built components, advanced styling options, and input validation features to accelerate the development of modern web applications. With Component Craftsman, developers can quickly create intuitive user interfaces with custom styles and seamless integration, enhancing productivity and user experience.",
   "repository": {
     "type": "git",
